@@ -5,6 +5,7 @@ var rg = document.getElementById('rg')
 var email = document.getElementById('email')
 var numero = document.getElementById('numero')
 var password = document.getElementById('password')
+var confirm_password = document.getElementById('confirm_password')
 
 nome.addEventListener('focus', () => {
     nome.style.borderColor = "rgb(163, 85, 124)";
@@ -47,4 +48,10 @@ password.addEventListener('focus', () => {
 })
 password.addEventListener('blur', () => {
     password.style.borderColor = "rgb(245, 130, 188)";
+})
+confirm_password.addEventListener('focus', () => {
+    confirm_password.style.borderColor = "rgb(163, 85, 124)";
+})
+confirm_password.addEventListener('blur', () => {
+    confirm_password.style.borderColor = "rgb(245, 130, 188)";
 })

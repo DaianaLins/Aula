@@ -55,3 +55,5 @@ confirm_password.addEventListener('focus', () => {
 confirm_password.addEventListener('blur', () => {
     confirm_password.style.borderColor = "rgb(245, 130, 188)";
 })
+
+vai

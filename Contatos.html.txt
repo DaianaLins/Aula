@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="contatos.css">
+    <title>ClinicalFem</title>
+</head>
+
+<body>
+    <form action="">
+       
+        <h3>Contatos e atendimento</h3>
+            <input id="email" type="text" nome=" email" placeholder=" Email">
+            <input id="numero"  type="text" nome="numero" maxlength="12" placeholder=" Número de celular">
+            <input type="submit" nome=" acao" value="Desejo receber novidades da clinica">
+    </form>
+    <script src="contatos.js"></script>   
+</body>
+
+</html>

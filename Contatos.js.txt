@@ -1,0 +1,15 @@
+var email = document.getElementById('email')
+var numero = document.getElementById('numero')
+
+email.addEventListener('focus', () => {
+    email.style.borderColor = "rgb(163, 85, 124)";
+})
+email.addEventListener('blur', () => {
+    email.style.borderColor = "rgb(245, 130, 188)";
+})
+numero.addEventListener('focus', () => {
+    numero.style.borderColor = "rgb(163, 85, 124)";
+})
+numero.addEventListener('blur', () => {
+    numero.style.borderColor = "rgb(245, 130, 188)";
+})

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Agendamento.css">
+    <title>ClinicalFem</title>
+</head>
+
+<body>
+    <form action="">
+        <h3>Agendamento</h3>
+        <br><label for="nome">
+            <span>Nome do paciente</span>
+        <input id="nome" type="text" placeholder="Nome">
+    </label>
+        <label for="servico">
+            <span>Serviço desejado</span>
+        <br><input list="servico" placeholder="Selecione">
+        <datalist id="servico">
+            <option>Dermatologia</option>
+            <option>Ginecologia</option>
+            <option>Otorrino</option>
+            <option>Estética íntima</option>
+            <option>Infectologia</option>
+            <option>Obstetríca</option>
+            <option>Ultrassonografia</option>
+            <option>Cardiologia</option>
+            <option>Neufrlogia</option>
+            <option>Infectologia</option>
+            <option>Proctologia</option>
+            <option>Endrocria</option>
+            <option>Ortopedia</option>
+            <option>Urologia</option>
+        </datalist>
+    </label>
+        <br><label for="Medico">
+            <span>Médico</span>
+        <br><input list="medico" placeholder="Selecione">
+        <br><datalist id="medico">
+            <option>Letícia Almeida</option>
+            <option>Daiana Lins</option>
+            <option>Jullie Anny</option>
+            <option>Marcus Glauter</option>
+        </datalist>
+    </label>
+        <label for="datacons">
+            <span>Data da consulta</span> 
+        <br><input id="datacons" type="date" nome="data">
+    </label>
+        <br><label for="horacons">
+            <span>Horário</span>
+        <br><input id="horacons" type="time" nome="horacons" value="08:00">
+    </label>
+        <br><label for="valorcons">
+            <span>Valor da consulta</span>
+        <br><input id="valorcons" type="number" step="0.01" nome="valorcons" min="50.00" placeholder="Enter a number">
+    </label>
+        <br><label for="pagamento">
+            <span>Pagamento</span>
+         <br><input list="Opções" placeholder="Selecione"> 
+         <br><datalist id="Opções">
+            <option> Pago</option>
+            <option> Pendente</option>
+         </datalist>
+        </label>
+        <input type="submit" nome=" acao" value="Agendar consulta">
+    </form>
+    <script src="Agendamento.JS"></script>
+</body>
+
+</html>

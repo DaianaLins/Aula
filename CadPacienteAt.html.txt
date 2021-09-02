@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo/CadPaciente.css">
+    <title>ClinicalFem</title>
+</head>
+<body>
+    <header>
+        <h1>CLINICALFEM</h1>
+    </header>
+    <nav>
+       <a href="#">Home</a>
+       <a href="#">Serviços</a>
+       <a href="#">Contatos</a>
+       <a href="#">Sobre nós</a>
+    </nav>
+
+    <main>
+        <article>
+            <form action="">
+                <h3>CADASTRO DO PACIENTE</h3>
+                <label for="Nome">Nome completo</label>
+                <input id="nome" type="text" nome="nome" placeholder="Nome">
+                <label for="datanasc">Data de nascimento </label>
+                <input id="datanasc" type="date" nome="data">
+                <label for="cpf">CPF</label><input id="cpf" type="text" nome="cpf" maxlength="11" placeholder="Digite o CPF">
+                <label for="rg">RG</label><input id="rg" type="text" nome="rg" placeholder="Digite o RG">
+                <label for="email">Email</label>
+                <input id="email" type="text" nome=" email" placeholder="Digite o email">
+                <label for="numero">Número para contato</label><input id="numero" type="text" nome="numero" placeholder="Digite o número">
+                <label for="password">Senha</label><input id="password" type="password" nome="senha" placeholder="Digite sua senha">
+                <label for="password">Confirme a senha</label><input type="password" placeholder="Confirme Senha" id="confirm_password">
+                <input type="submit" nome=" acao" value="Concluir Cadastro">
+            </form>
+        
+            <script src="CadPaciente.JS"></script>
+
+        </article>
+    </main>
+    <footer>
+        <p>Site criado por Daiana Lins e Letícia Almeida</p>
+    </footer>
+</body>
+</html>

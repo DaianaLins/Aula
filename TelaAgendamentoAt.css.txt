@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background-color: white;
+}
+
+header{
+    background-color: #f2a7a7;
+    padding: 40px;
+    text-align: center;
+}
+
+header > h1{
+    color: white;
+}
+
+nav{
+    background-color: #fac6c6;
+    padding: 19px;
+    text-align: center;
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: .5s;
+}
+
+nav > a:hover{
+    background-color: white;
+    color: #f2a7a7;
+}
+
+form{
+    background-color: white;
+    border: 2px solid #f2a7a7;
+    max-width: 500px;
+    width: 70%;
+    padding: 30px;
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%, -50%);
+}
+form h3 {
+    text-align: center;
+    color: #bf7373;
+    font-family: Arial,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+form input[type=text],
+form input[type=password], form input[type=time], form input[number], form input[date] {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #f2a7a7;
+    padding: 10 px;
+    margin: 10px 0;
+}
+form input[list]{
+    width: 50%;
+    height: 45px;
+    border: 1px solid #f2a7a7;
+    padding: 10 px;
+    margin: 10px 0;
+}
+form input[date]{
+    width: 50%;
+    height: 45px;
+    border: 1px solid #f2a7a7;
+    padding: 10 px;
+    margin: 10px 0;
+}
+form input[number]{
+    width: 50%;
+    height: 45px;
+    border: 1px solid #f2a7a7;
+    padding: 10 px;
+    margin: 10px 0;
+}
+#horacons{
+    width: 30%;
+    height: 45px;
+    border: 1px solid #f2a7a7;
+    padding: 30 px;
+    margin: 10px 0;
+}
+#valorcons{
+    width: 40%;
+    height: 45px;
+    border: 1px solid #f2a7a7;
+    padding: 10 px;
+    margin: 10px 0;
+}
+#datacons{
+    width: 50%;
+    height: 45px;
+    border: 1px solid #f2a7a7;
+    padding: 10 px;
+    margin: 10px 0;
+}
+#pagamento{
+    width: 10%;
+    height: 45px;
+    border: 1px solid #f2a7a7;
+    padding: 10 px;
+    margin: 10px 0;
+}
+form input[type=submit] {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: #bf7373;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+}
+
+form input[type=submit]:hover {
+    background-color: #bf7373;
+    transition: 1s;
+}
+
+form input[type=text]:focus {
+    outline: 0;
+}
+
+form input[type=password]:focus {
+    outline: 0;
+}
+form input[type=list]:focus {
+    outline: 0;
+}
+form input[type=date]:focus {
+    outline: 0;
+}
+form input[type=number]:focus {
+    outline: 0;
+}
+form input[type=time]:focus {
+    outline: 0;
+}
+
+footer{
+    background-color: #f2a7a7;
+    color: white;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: -500px; left: 0px;
+}
+
+footer > p{
+    padding: 35px;
+    text-align: center;
+}

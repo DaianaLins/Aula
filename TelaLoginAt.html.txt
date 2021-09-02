@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClinicalFem - Login</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>CLINICALFEM</h1>
+    </header>
+    <nav>
+       <a href="#">Home</a>
+       <a href="#">Serviços</a>
+       <a href="#">Contatos</a>
+       <a href="#">Sobre nós</a>
+    </nav>
+
+    <main>
+        <article>
+            <form action="">
+                <h3>ÁREA EXCLUSIVA - LOGIN</h3>
+                <input id="email" type="text" nome=" email" placeholder=" Seu e-mail...">
+                <input id="password" type="password" nome=" senha" placeholder=" Sua senha...">
+                <input type="submit" nome=" acao" value="Enviar">
+
+                <p>Esqueceu a senha? <a href="#">Clique aqui</a></p>
+            </form>
+            <script>
+                var email = document.getElementById('email')
+                var password = document.getElementById('password')
+        
+                email.addEventListener('focus', () => {
+                    email.style.borderColor = "rgb(163, 85, 124)";
+                })
+                email.addEventListener('blur', () => {
+                    email.style.borderColor = "rgb(245, 130, 188)";
+                })
+                password.addEventListener('focus', () => {
+                    password.style.borderColor = "rgb(163, 85, 124)";
+                })
+                password.addEventListener('blur', () => {
+                    password.style.borderColor = "rgb(245, 130, 188)";
+                })
+
+             </script>
+
+        </article>
+    </main>
+    <footer>
+        <p>Site criado por Daiana Lins e Letícia Almeida</p>
+    </footer>
+</body>
+</html>

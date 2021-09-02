@@ -20,7 +20,7 @@
             </ul>
         </nav>
     </header>
-    <h1>Selecione serviço</h1>
+    <h1>Selecione o serviço</h1>
     <hr color="white">
     <section class="flex">
         <div>

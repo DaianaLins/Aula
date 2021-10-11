@@ -51,6 +51,8 @@
                 <input id="cpf" type="text" nome="cpf" maxlength="11" placeholder="Digite o CPF">
                 <label for="rg">RG:</label>
                 <input id="rg" type="text" nome="rg" placeholder="RG">
+                <label for="email">Email</label>
+                <input id="email" type="text" nome=" email" placeholder="Digite o email">
                 <label for="password">Escolha uma senha</label>
                 <input id="password" type="password" nome="senha" placeholder="Senha">
                 <label for="confirm_password">Confirme a senha</label>
@@ -65,4 +67,4 @@
         <p>Site criado por Daiana Lins e Letícia Almeida</p>
     </footer>
 </body>
-</html>S
+</html>

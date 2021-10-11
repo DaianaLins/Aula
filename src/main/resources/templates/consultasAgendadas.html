@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" lang="pt-br">
+<!-- IMPORTAÇÕES DO MATERIALIZER -->
+<!-- SITE: https://materializecss.com/getting-started.html -->
+<!--Import Google Icon Font-->
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet" />
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet"
+	href="materialize/css/materialize.min.css" media="screen,projection" />
+
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style/styleAgendamento.css" />
+<head>
+<title>Consultas Agendadas</title>
+</head>
+<body>
+
+	<h1>Lista de Consultas</h1>
+	<h3>
+		<a href="/agendarConsulta" class="waves-effect waves-light btn"><i
+			class="material-icons left">add_circle_outline</i>Agendar Consulta</a>
+	</h3>
+	<table class="container">
+		<thead>
+			<tr>
+				<th>Nome</th>
+				<th>Serviço</th>
+				<th>Médico</th>
+				<th>Data</th>
+				<th>Horário</th>
+				<th>Pagamento</th>
+			</tr>
+		</thead>
+		<tbody>
+
+
+			<tr th:each="agendamento : ${agendamentos}">
+
+				<td>
+						<a th:href="${(#mvc.url('AC#detalhesConsulta').arg(0,agendamento.codigo)).build()}"><span th:text="${agendamento.nome}"></span>
+				</a></td>
+				<td><span th:text="${agendamento.servico}"></span></td>
+				<td><span th:text="${agendamento.medico}"></span></td>
+				<td><span th:text="${agendamento.dataC}"></span></td>
+				<td><span th:text="${agendamento.horario}"></span></td>
+				<td><span th:text="${agendamento.pagamento}"></span></td>
+			</tr>
+		</tbody>
+	</table>
+	<!--JavaScript at end of body for optimized loading-->
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo/telaselecionarlogin.css">
+
+</head>
+<body>
+    <header>
+        <h1>CLINICALFEM</h1>
+    </header>
+    <nav>
+       <a href="#">Home</a>
+       <a href="#">Serviços</a>
+       <a href="#">Contatos</a>
+       <a href="#">Sobre nós</a>
+    </nav>
+
+    <h1>FAZER LOGIN COMO</h1>
+    <hr color="white">
+    <section class="flex">
+        <div>
+            <img src="./logos/cliente (1).png" alt="">
+            <p><button id="cadc" type="submit" onclick="cadastrarC()"> Cliente </button></button></p>
+        </div>
+        <div>
+            <img src="./logos/medico (1).png" alt="">
+            <p><button id="cadm" type="submit" onclick="cadastrarM()"> Médico</button></p>
+        </div>
+        <div>
+            <img src="./logos/apoio-suporte.png" alt="">
+            <p><button id="ag" type="submit" onclick="agendar()">Atendente</button></p>
+        </div>
+    </div>
+</section>
+<script src="telageral.js"></script>
+<footer>
+    <p>Site criado por Daiana Lins e Letícia Almeida</p>
+</footer>
+
+</body>
+</html>
